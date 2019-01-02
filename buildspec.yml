@@ -7,8 +7,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - ls -l
-      - cd serverless-demo-cicd-service && sls deploy
+        #- cd serverless-demo-cicd-service && sls deploy
+      - sls deploy
   post_build:
     commands:
       - echo Build completed on `date`
