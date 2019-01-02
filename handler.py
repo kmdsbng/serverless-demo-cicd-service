@@ -12,8 +12,9 @@ def get_person(id):
     return response['Item']
 
 def get_persons():
-    response = table.scan()
-    return response['Items']
+    #response = table.scan()
+    #return response['Items']
+    return "hoge"
 
 def hello(event, context):
     return get_persons() if event['person_id'] == '' else get_person(event['person_id'])
