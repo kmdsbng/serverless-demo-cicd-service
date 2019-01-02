@@ -1,0 +1,17 @@
+iversion: 0.2
+ 
+phases:
+  install:
+    commands:
+      - npm install -g serverless
+  build:
+    commands:
+      - echo Build started on `date`
+      - cd demo-cicd-service && sls deploy
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+
+
+
